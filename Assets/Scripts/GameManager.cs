@@ -7,6 +7,8 @@
 namespace Assets.SimpleAndroidNotifications{
 	public class GameManager : MonoBehaviour {
 
+		public GameObject happinessText;
+
 		public GameObject taskPanel;
 		public GameObject nameTaskInputField;
 		public GameObject timeHoursTaskInputField;
@@ -16,6 +18,7 @@ namespace Assets.SimpleAndroidNotifications{
 
 		[SerializeField] Transform  gridElemets;
 		[SerializeField]  GameObject buttonPrefabs;
+		public GameObject robot;
 
 
 		public GameObject task;
@@ -24,15 +27,16 @@ namespace Assets.SimpleAndroidNotifications{
 
 		// Use this for initialization
 		void Start () {			
+			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;
 			taskList = new List<GameObject>();
 			welcomeNotification ();
-			Debug.Log (TimeSpan.FromSeconds (100));
+			Debug.Log ("felicidade do"+happinessText.GetComponent<Text> ().text );
 
 			}
 		
 		// Update is called once per frame
 		void Update () {
-				
+			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;	
 		}
 
 		public void buttonBehavior(int i){
