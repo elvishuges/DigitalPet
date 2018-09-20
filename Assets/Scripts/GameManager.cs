@@ -39,11 +39,13 @@ namespace Assets.SimpleAndroidNotifications{
 			switch (i)
 			{
 			case 0:
+				toggle (listPanel);
 				taskPanel.SetActive (!taskPanel.activeInHierarchy);
 				break;
 			case 1:
 				break;
 			case 2:
+				toggle (taskPanel);
 				listPanel.gameObject.SetActive(!listPanel.gameObject.activeInHierarchy);
 				print ("Botao 2 clicado");
 				break;
