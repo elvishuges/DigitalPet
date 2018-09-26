@@ -8,7 +8,7 @@ namespace Assets.SimpleAndroidNotifications{
 	public class GameManager : MonoBehaviour {
 
 		public GameObject happinessText;
-
+		public GameObject nameText;
 		public GameObject taskPanel;
 		public GameObject nameTaskInputField;
 		public GameObject timeHoursTaskInputField;
@@ -26,8 +26,7 @@ namespace Assets.SimpleAndroidNotifications{
 
 
 		// Use this for initialization
-		void Start () {			
-			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;
+		void Start () {
 			taskList = new List<GameObject>();
 			welcomeNotification ();
 			Debug.Log ("felicidade do"+happinessText.GetComponent<Text> ().text );
@@ -37,6 +36,7 @@ namespace Assets.SimpleAndroidNotifications{
 		// Update is called once per frame
 		void Update () {
 			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;	
+			nameText.GetComponent<Text> ().text = robot.GetComponent<Robot> ().name;
 		}
 
 		public void buttonBehavior(int i){
