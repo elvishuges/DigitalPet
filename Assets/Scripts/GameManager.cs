@@ -10,6 +10,7 @@ namespace Assets.SimpleAndroidNotifications{
 		public GameObject happinessText;
 		public GameObject nameText;
 		public GameObject taskPanel;
+		public GameObject exitPanel;
 		public GameObject nameTaskInputField;
 		public GameObject timeHoursTaskInputField;
 		public GameObject timeMinutesTaskInputField;
@@ -43,19 +44,27 @@ namespace Assets.SimpleAndroidNotifications{
 			{
 			case 0:
 				toggle (listPanel);
+				toggle (exitPanel);
 				taskPanel.SetActive (!taskPanel.activeInHierarchy);
 				break;
 			case 1:
 				break;
 			case 2:
 				toggle (taskPanel);
+				toggle (exitPanel);
 				listPanel.gameObject.SetActive(!listPanel.gameObject.activeInHierarchy);
 				print ("Botao 2 clicado");
 				break;
 			case 5:
-					print ("Botao 5 clicado");
-					Application.Quit();
-				break;			
+			    print ("Botao 5 clicado");
+				toggle (listPanel);
+				toggle (taskPanel);
+				exitPanel.gameObject.SetActive(!exitPanel.gameObject.activeInHierarchy);
+				break;
+			case 6:
+				print ("Botao 5 clicado");
+				Application.Quit();
+				break;	
 
 			}
 		}
