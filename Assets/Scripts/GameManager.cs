@@ -30,7 +30,6 @@ namespace Assets.SimpleAndroidNotifications{
 			taskList = new List<GameObject>();
 			welcomeNotification ();
 			Debug.Log ("felicidade do"+happinessText.GetComponent<Text> ().text );
-
 			}
 		
 		// Update is called once per frame
