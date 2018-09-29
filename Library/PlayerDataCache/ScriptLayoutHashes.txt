@@ -1,5 +1,5 @@
 Android
-aef9ab43651a5fe07e4d6a44e0c5b187 Assembly-CSharp.dll:.Robot
+c11b0d95da398d14ac3167dd40a07b68 Assembly-CSharp.dll:.Robot
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -137,4 +137,4 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-9583323a4095b13eed4a041509883085 Assembly-CSharp.dll:Assets.SimpleAndroidNotifications.GameManager
+687ff56f538e878709ed2860689a5bd3 Assembly-CSharp.dll:Assets.SimpleAndroidNotifications.GameManager
