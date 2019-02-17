@@ -4,7 +4,6 @@
 -langversion:4
 -out:Temp/Assembly-CSharp.dll
 -unsafe
--optimize
 -r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.CoreModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
@@ -133,6 +132,11 @@
 -define:UNITY_UNITYADS_API
 -define:ENABLE_MONO
 -define:NET_2_0_SUBSET
+-define:DEVELOPMENT_BUILD
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
 -define:UNITY_HAS_GOOGLEVR
 -define:UNITY_HAS_TANGO
 Assets/Scripts/GameManager.cs
