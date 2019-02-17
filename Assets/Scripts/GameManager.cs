@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿	using System.Collections;
 	using System.Collections.Generic;
 	using UnityEngine;
@@ -156,6 +157,8 @@ namespace Assets.SimpleAndroidNotifications{
 
 	}
 =======
+=======
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 ﻿	using System.Collections;
 	using System.Collections.Generic;
 	using UnityEngine;
@@ -304,5 +307,8 @@ namespace Assets.SimpleAndroidNotifications{
 		}
 
 	}
+<<<<<<< HEAD
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
+=======
 >>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 }

@@ -108,10 +108,17 @@ MonoBehaviour:
     width: 1366
     height: 675
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 679, y: 321}
   m_MaxSize: {x: 12004, y: 8021}
   vertical: 0
   controlID: 268
+=======
+  m_MinSize: {x: 683, y: 321}
+  m_MaxSize: {x: 12008, y: 8021}
+  vertical: 0
+  controlID: 112
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
   m_MinSize: {x: 683, y: 321}
   m_MaxSize: {x: 12008, y: 8021}
@@ -186,10 +193,13 @@ MonoBehaviour:
     width: 830
     height: 404
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
 =======
+=======
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
@@ -357,9 +367,15 @@ MonoBehaviour:
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: a6dbfeff54dcfeff64ddfeffba19ffff6a1affff801bffff8490ffff3491ffff4a92ffffa6fbffff000000004e760000788e0000
+=======
+    m_SelectedIDs: c62f0000
+    m_LastClickedID: 12230
+    m_ExpandedIDs: a0fbffff00000000402d0000bc2f000054300000
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
     m_SelectedIDs: c62f0000
     m_LastClickedID: 12230
@@ -420,9 +436,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 713.8966, y: 828.8041, z: -19.155022}
     speed: 2
     m_Value: {x: 713.8966, y: 828.8041, z: -19.155022}
+=======
+    m_Target: {x: 696.85254, y: 1171.6404, z: -0.32400304}
+    speed: 2
+    m_Value: {x: 696.85254, y: 1171.6404, z: -0.32400304}
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
     m_Target: {x: 696.85254, y: 1171.6404, z: -0.32400304}
     speed: 2
@@ -455,9 +477,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 2235.8992
     speed: 2
     m_Value: 2235.8992
+=======
+    m_Target: 383.5214
+    speed: 2
+    m_Value: 383.5214
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
     m_Target: 383.5214
     speed: 2
@@ -627,9 +655,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: f82a0000
     m_LastClickedID: 11000
     m_ExpandedIDs: 0000000018270000d4280000822b0000883200008a320000ffffff7f
+=======
+    m_SelectedIDs: 1e270000
+    m_LastClickedID: 10014
+    m_ExpandedIDs: 000000001e270000c2270000ae2800003c290000fa2a000004310000ffffff7f
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
     m_SelectedIDs: 1e270000
     m_LastClickedID: 10014
@@ -663,7 +697,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000018270000cc270000d4280000822b0000883200008a320000ffffff7f
+=======
+    m_ExpandedIDs: 000000001e270000ae2800003c290000fa2a000004310000
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
 =======
     m_ExpandedIDs: 000000001e270000ae2800003c290000fa2a000004310000
 >>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
@@ -692,11 +730,14 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 801c0000a21c0000ea1d0000041e0000801f0000d26d0000f21e0000d41b000068250000de2400005e290000cc2a00009a2a0000f22900005e28000072290000b82b0000322700007839000000000000
 =======
+=======
+>>>>>>> parent of 258fb2c... add some beautiful style in taskaPnel and listPanel
     m_SelectedInstanceIDs: fe2c0000
     m_LastClickedInstanceID: 11518
     m_HadKeyboardFocusLastEvent: 1
