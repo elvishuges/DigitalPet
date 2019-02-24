@@ -17,7 +17,7 @@ namespace Assets.SimpleAndroidNotifications{
 		public GameObject listPanel;
 
 		[SerializeField] Transform  gridElemets;
-		[SerializeField]  GameObject buttonPrefabs;
+		[SerializeField] GameObject buttonPrefabs;
 		public GameObject robot;
 
 
@@ -29,17 +29,19 @@ namespace Assets.SimpleAndroidNotifications{
 		void Start () {
 			taskList = new List<GameObject>();
 			welcomeNotification ();
-			Debug.Log ("felicidade do"+happinessText.GetComponent<Text> ().text );
+			Debug.Log ("felicidade do pet :"+happinessText.GetComponent<Text> ().text );
 
 			}
 		
 		// Update is called once per frame
 		void Update () {
+			//robot.GetComponent<Robot> ().updateHappiness (-2);
 			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;	
 			nameText.GetComponent<Text> ().text = robot.GetComponent<Robot> ().name;
 		}
 
 		public void buttonBehavior(int i){
+			robot.GetComponent<Robot> ().updateHappiness (-2);
 			switch (i)
 			{
 			case 0:
@@ -72,7 +74,11 @@ namespace Assets.SimpleAndroidNotifications{
 			toggle (taskPanel);
 			Debug.Log ("Store clicked");
 			string name = nameTaskInputField.GetComponent<InputField> ().text;
-			int timeMinutes = int.Parse(timeMinutesTaskInputField.GetComponent<InputField> ().text);	
+			nameTaskInputField.GetComponent<InputField> ().text = null;
+			int timeMinutes = int.Parse(timeMinutesTaskInputField.GetComponent<InputField> ().text);
+			timeMinutesTaskInputField.GetComponent<InputField> ().text = null;
+			Debug.Log (name);
+           //verificar se o name não é null
 
 			int timeconverted = convertPassedTimeToSeconds (timeMinutes);		   
 			
@@ -102,9 +108,8 @@ namespace Assets.SimpleAndroidNotifications{
 			vector3.z = 1;
 
 			Vector2 vector2;
-			vector2.x = (float) 638.8; 
-			vector2.y = (float)95.644;
-
+			vector2.x = (float) 698.8; 
+			vector2.y = (float) 95.644;
 
 			Debug.Log (task.GetComponent<Task> ()._name);
 			GameObject button = (GameObject) Instantiate (buttonPrefabs);
@@ -114,13 +119,6 @@ namespace Assets.SimpleAndroidNotifications{
 			button.transform.parent = gridElemets;
 
 
-			//GameObject button = (GameObject) Instantiate (buttonPrefabs);
-			//button.GetComponentInChildren< RectTransform> ().localScale = vector;
-			//button.GetComponentInChildren<Text>().text= "Medicamento teste";
-
-
-			//button.GetComponentInChildren< RectTransform> ().se.y = 1.0;
-			//button.transform.parent = gridElemets;
 		}
 
 

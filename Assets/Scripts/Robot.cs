@@ -9,7 +9,7 @@ public class Robot : MonoBehaviour {
 
 	public GameObject canvasDialogue;
 	[SerializeField]
-	private int _happiness; // o quão feliz ele esta de 0 a 100
+	private int _happiness ; // o quão feliz ele esta de 0 a 100
 	[SerializeField]
 	private string _name;
 
@@ -50,6 +50,12 @@ public class Robot : MonoBehaviour {
 	public string name{
 		get { return _name;}
 		set { _name = value;}
+	}
+
+	public void updateHappiness(int i){
+		_happiness = _happiness + i;
+		if (_happiness > 100)
+			_happiness = 100;
 	}
 
 

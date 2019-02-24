@@ -10,6 +10,7 @@ public class Task : MonoBehaviour {
 	private int timeInSeconds;
 	private string name;
 	private int id;
+    private bool alarmouENaoTomou = false;  
 
 	// Use this for initialization
 	void Start () {		
@@ -18,6 +19,10 @@ public class Task : MonoBehaviour {
 			Debug.Log (_id);
 			Debug.Log (_name);
 			Debug.Log (_timeInSeconds);
+			Debug.Log (_alarmouENaoTomou
+			);
+			Debug.Log (_alarmouENaoTomou
+			);
 			if(_timeInSeconds > 0  )
 			  InvokeRepeating ("ScheduleCustom",_timeInSeconds,_timeInSeconds);
 
@@ -28,11 +33,13 @@ public class Task : MonoBehaviour {
 		
 	}
 
-
 		public void ScheduleCustom()
-	{
+	{    
+		_alarmouENaoTomou = true;
+
 		var notificationParams = new NotificationParams
-		{
+		{   
+
 			Id = _id,
 			Delay = TimeSpan.FromSeconds(0),
 			Title = "Hora do Medicamento: " +_name,
@@ -63,6 +70,10 @@ public class Task : MonoBehaviour {
 		get { return id;}
 		set { id = value;}
 	  }
+	public bool  _alarmouENaoTomou{
+			get { return alarmouENaoTomou;}
+			set { alarmouENaoTomou = value;}
+		}
 
 	}
 }
