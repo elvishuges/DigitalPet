@@ -28,8 +28,6 @@ public class Task : MonoBehaviour {
 		
 	}
 
-	
-
 
 		public void ScheduleCustom()
 	{
@@ -37,7 +35,7 @@ public class Task : MonoBehaviour {
 		{
 			Id = _id,
 			Delay = TimeSpan.FromSeconds(0),
-			Title = "Hora de " +_name,
+			Title = "Hora do Medicamento: " +_name,
 			Message = "Cuide do seu Pet Digital",
 			Ticker = "Ticker",
 			Sound = true,
