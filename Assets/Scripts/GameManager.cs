@@ -56,9 +56,9 @@ namespace Assets.SimpleAndroidNotifications{
 				print ("Botao 2 clicado");
 				break;
 			case 5:
-					print ("Botao 5 clicado");
-					Application.Quit();
-				break;			
+				print ("Botao 5 clicado");
+				Application.Quit();
+			break;			
 
 			}
 		}

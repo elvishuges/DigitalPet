@@ -12,6 +12,7 @@ public class Robot : MonoBehaviour {
 	private int _happiness ; // o quão feliz ele esta de 0 a 100
 	[SerializeField]
 	private string _name;
+	private int _clickedCount;
 
 	void Start () {
 		Invoke("firstDialogue", 2); //this will happen after 2 seconds
@@ -32,9 +33,25 @@ public class Robot : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		GetComponent<Animator> ().SetBool ("jump", gameObject.transform.position.y > -1.4f);
+		GetComponent<Animator> ().SetBool ("jump", gameObject.transform.position.y > -2.4f);
+
 		if (Input.GetMouseButtonUp (0)) {
-			canvasDialogue.SetActive (false);
+			Vector2 v = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
+			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (v), Vector2.zero);
+			Debug.Log("clicou");
+			if (hit) {
+				//Debug.Log(hit.transform.name);
+				if (hit.transform.gameObject.tag == "robot") {
+					_clickedCount++;
+					if (_clickedCount >= 3) {
+						//Debug.Log(hit.transform.name);
+						updateHappiness(1);
+						_clickedCount = 0;
+						GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 1000000));
+					}
+				}
+
+			}
 		}
 	}
 
@@ -54,6 +71,7 @@ public class Robot : MonoBehaviour {
 
 	public void updateHappiness(int i){
 		_happiness = _happiness + i;
+		PlayerPrefs.SetInt ("happiness", _happiness);
 		if (_happiness > 100)
 			_happiness = 100;
 	}
