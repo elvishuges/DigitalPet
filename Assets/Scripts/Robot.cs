@@ -7,7 +7,7 @@ using UnityEngine;
 public class Robot : MonoBehaviour {
 
 
-	public GameObject canvasDialogue;
+
 	[SerializeField]
 	private int _happiness ; // o quão feliz ele esta de 0 a 100
 	[SerializeField]
@@ -15,7 +15,7 @@ public class Robot : MonoBehaviour {
 	private int _clickedCount;
 
 	void Start () {
-		Invoke("firstDialogue", 2); //this will happen after 2 seconds
+		
 
 		if (!PlayerPrefs.HasKey ("name")) 
 			PlayerPrefs.SetString ("name", "Bob");
@@ -55,9 +55,7 @@ public class Robot : MonoBehaviour {
 		}
 	}
 
-	void firstDialogue(){
-		canvasDialogue.SetActive (!canvasDialogue.activeInHierarchy);
-	}
+
 
 	public int happiness{
 		get { return _happiness;}

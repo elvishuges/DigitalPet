@@ -19,6 +19,7 @@ namespace Assets.SimpleAndroidNotifications{
 		[SerializeField] Transform  gridElemets;
 		[SerializeField] GameObject buttonPrefabs;
 		public GameObject robot;
+		public GameObject [] robotList;
 
 
 		public GameObject task;
@@ -30,6 +31,7 @@ namespace Assets.SimpleAndroidNotifications{
 			taskList = new List<GameObject>();
 			welcomeNotification ();
 			Debug.Log ("felicidade do pet :"+happinessText.GetComponent<Text> ().text );
+			creatRobot (0);
 
 			}
 		
@@ -38,6 +40,12 @@ namespace Assets.SimpleAndroidNotifications{
 			//robot.GetComponent<Robot> ().updateHappiness (-2);
 			happinessText.GetComponent<Text> ().text = "" + robot.GetComponent<Robot> ().happiness;	
 			nameText.GetComponent<Text> ().text = robot.GetComponent<Robot> ().name;
+			if (Input.GetKeyUp (KeyCode.Space)) {
+				creatRobot (1);
+			}
+			if (Input.GetKeyUp (KeyCode.D)) {
+				creatRobot (2);
+			}
 		}
 
 		public void buttonBehavior(int i){
@@ -119,6 +127,15 @@ namespace Assets.SimpleAndroidNotifications{
 			button.transform.parent = gridElemets;
 
 
+		}
+
+		public void creatRobot(int i){
+			if (robot) {
+				Destroy (robot);
+				robot = Instantiate (robotList [i], Vector3.zero, Quaternion.identity) as GameObject;
+			}
+			//toggle (robotpanel);
+			PlayerPrefs.SetInt ("look", i);
 		}
 
 
